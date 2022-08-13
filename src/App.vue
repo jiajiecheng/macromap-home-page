@@ -2,15 +2,17 @@
   <div id="app">
     <Top />
     <Bottom />
+    <Copyright/>
   </div>
 </template>
 
 <script>
 import Top from './components/Top.vue'
 import Bottom from './components/Bottom.vue'
+import Copyright from './components/Copyright.vue';
 export default {
   name: 'App',
-  components: { Top, Bottom }
+  components: { Top, Bottom, Copyright }
 }
 </script>
 
@@ -26,7 +28,9 @@ body {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
-li{
+li,ul{
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 </style>
