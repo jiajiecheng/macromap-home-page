@@ -4,13 +4,13 @@
       <img src="../assets/logo.png" alt="logo" class="logo">
       <ul class="navigation">
         <li>
-          <router-link to="" active-class="selectLink" active>主页</router-link>
+          <router-link to="/" active-class="selectLink">主页</router-link>
         </li>
         <li>
-          <router-link to="">产品介绍</router-link>
+          <router-link to="/home">产品介绍</router-link>
         </li>
         <li>
-          <router-link to="">招商中心</router-link>
+          <router-link to="/shop">招商中心</router-link>
         </li>
         <li>
           <router-link to="">下载中心</router-link>
@@ -44,7 +44,7 @@ export default {
   top: 0;
   width: 100%;
   height: 75px;
-  background-color: #fff;
+  /* background-color: #fff; */
   /* background-color: pink; */
   display: flex;
   align-items: center;

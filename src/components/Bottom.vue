@@ -33,7 +33,6 @@ export default {
 
 <style scoped>
 .bottomContainer {
-  margin-top: 75px;
   display: flex;
   flex-direction: row;
   justify-content: center;
