@@ -2,6 +2,7 @@
   <div class="homeContainer">
     <Download/>
     <Qrcode/>
+    <GridList/>
     <IntroduceList/>
   </div>
 </template>
@@ -10,9 +11,10 @@
 import Download from '@/components/Download.vue';
 import Qrcode from '@/components/Qrcode.vue';
 import IntroduceList from '@/components/IntroduceList.vue';
+import GridList from '@/components/GridList.vue';
 export default {
     name: "Home",
-    components: { Download, Qrcode, IntroduceList }
+    components: { Download, Qrcode, IntroduceList, GridList }
 }
 </script>
 
