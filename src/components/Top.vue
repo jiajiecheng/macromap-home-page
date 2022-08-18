@@ -44,6 +44,7 @@ export default {
   top: 0;
   width: 100%;
   height: 75px;
+  z-index: 999;
   background-color: #fff;
   /* background-color: pink; */
   display: flex;

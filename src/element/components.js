@@ -1,5 +1,5 @@
 // 引入的外部组件
 import Vue from 'vue'
-import { Button, Select } from 'element-ui';
-Vue.component(Button.name, Button);
-Vue.component(Select.name, Select);
+import { Carousel,CarouselItem } from 'element-ui';
+Vue.component(Carousel.name, Carousel);
+Vue.component(CarouselItem.name, CarouselItem);
