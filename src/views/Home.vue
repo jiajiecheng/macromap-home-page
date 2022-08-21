@@ -7,6 +7,9 @@
     <IntroduceList/>
     <Time/>
     <Customer/>
+    <div class="end">
+      <h1>更多内容，等你来发现！</h1>
+    </div>
   </div>
 </template>
 
@@ -28,5 +31,16 @@ export default {
 .homeContainer{
   margin-top: 75px;
 }
-
+.end{
+  padding: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end h1{
+  color: #000;
+  font-size: 34px;
+  font-weight: 700;
+}
 </style>

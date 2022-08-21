@@ -4,25 +4,25 @@
       <img src="../assets/logo.png" alt="logo" class="logo">
       <ul class="navigation">
         <li>
-          <router-link to="/" active-class="selectLink">主页</router-link>
+          <router-link to="/home" active-class="selectLink">主页</router-link>
         </li>
         <li>
-          <router-link to="/home">产品介绍</router-link>
+          <router-link to="/product" active-class="selectLink">产品介绍</router-link>
         </li>
         <li>
-          <router-link to="/shop">招商中心</router-link>
+          <router-link to="/shop" active-class="selectLink">招商中心</router-link>
         </li>
         <li>
-          <router-link to="">下载中心</router-link>
+          <router-link to="/dowload" active-class="selectLink">下载中心</router-link>
         </li>
         <li>
-          <router-link to="">资讯中心</router-link>
+          <router-link to="/information" active-class="selectLink">资讯中心</router-link>
         </li>
         <li>
-          <router-link to="">加入我们</router-link>
+          <router-link to="/join" active-class="selectLink">加入我们</router-link>
         </li>
         <li>
-          <router-link to="">关于我们</router-link>
+          <router-link to="/about" active-class="selectLink">关于我们</router-link>
         </li>
         <li>
           <button class="freeUse">立即免费使用</button>
