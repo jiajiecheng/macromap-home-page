@@ -2,19 +2,22 @@
   <div class="introduceList">
     <ul>
       <li v-for="(introduce,index) in introduceList" :key="index">
-        <div class="introduceContent">
+        <!-- <div class="introduceContent">
           <h1>{{introduce.title}}</h1>
           <p>{{introduce.content}}</p>
         </div>
-        <div class="introduceImg"><img :src="introduce.imgurl" :alt="introduce.title"></div>
+        <div class="introduceImg"><img :src="introduce.imgurl" :alt="introduce.title"></div> -->
+        <Item :introduce="introduce" :direction="index % 2 == 0 ? 'row-reverse' : 'row'" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import Item from './Item.vue'
 export default {
   name: 'IntroduceList',
+  components: { Item },
   data() {
     return {
       introduceList: [
@@ -40,14 +43,14 @@ ul {
   width: 100%;
 }
 .introduceList ul li:nth-child(odd) {
-  flex-direction: row;
+  /* flex-direction: row; */
   background-color: #fff;
 }
 .introduceList ul li:nth-child(even) {
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   background-color: #f3f7fd;
 }
-.introduceList ul li {
+/* .introduceList ul li {
   width: 100%;
   height: 612px;
   display: flex;
@@ -69,5 +72,5 @@ ul {
 .introduceContent p {
   font-size: 18px;
   color: #999;
-}
+} */
 </style>

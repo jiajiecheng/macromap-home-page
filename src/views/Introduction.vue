@@ -11,8 +11,8 @@
 
 <script>
 import Title from '@/components/Title.vue';
-import GridList from '@/components/GridList.vue';
-import IntroduceList from '@/components/IntroduceList.vue';
+import GridList from '@/components/Grid.vue';
+import IntroduceList from '@/components/List.vue';
 import Qrcode from '@/components/Qrcode.vue';
 export default {
     name: "Introduction",
