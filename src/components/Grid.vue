@@ -2,7 +2,7 @@
   <div class="gridListContainer">
     <h1 class="title">{{title}}</h1>
     <div class="grid">
-      <div class="item" v-for="(item,index) in gridList" :key="index">
+      <div class="item" v-for="(item,index) in list" :key="index">
         <img :src="item.imgSrc" :alt="item.title">
         <h1>{{item.title}}</h1>
         <p>{{item.content}}</p>
@@ -14,28 +14,7 @@
 <script>
 export default {
   name: 'GridList',
-  data() {
-    return {
-      title: '宏图电子菜单特性',
-      gridList: [
-        {
-          imgSrc: 'http://www.chi1dun.com/static/images/description-1.png',
-          title: '个性化',
-          content: '界面自由设计,流程自由定制。'
-        },
-        {
-          imgSrc: 'http://www.chi1dun.com/static/images/description-2.png',
-          title: '酷炫',
-          content: '图片/视频/动画/音效,多媒体自由组合。'
-        },
-        {
-          imgSrc: 'http://www.chi1dun.com/static/images/description-3.png',
-          title: '体验',
-          content: '给顾客极致体验,在体验中静默营销。'
-        }
-      ]
-    }
-  }
+  props:['title','list']
 }
 </script>
 
