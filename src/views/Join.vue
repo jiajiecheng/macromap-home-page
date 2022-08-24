@@ -1,5 +1,5 @@
 <template>
-  <div class="join">
+  <div class="joinContainer">
     <div class="header">
       <h1 class="title">加入我们</h1>
     </div>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-.join {
+.joinContainer {
   margin-top: 75px;
   display: flex;
   flex-direction: column;
