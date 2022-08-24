@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Introduction from '../views/Introduction.vue'
+import Join from '../views/Join.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -16,6 +17,10 @@ const routes = [
   {
     path: '/product',
     component: Introduction
+  },
+  {
+    path: '/join',
+    component: Join
   }
 ]
 
