@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Introduction from '../views/Introduction.vue'
 import Join from '../views/Join.vue'
 import  About from '../views/About.vue'
+import DownLoad from '../views/DownLoad.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,6 +27,10 @@ const routes = [
   {
     path: '/about',
     component: About
+  },
+  {
+    path: '/dowload',
+    component: DownLoad
   }
 ]
 
