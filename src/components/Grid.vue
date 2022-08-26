@@ -3,7 +3,7 @@
     <h1 class="title">{{title}}</h1>
     <div class="grid">
       <div class="item" v-for="(item,index) in list" :key="index">
-        <img :src="item.imgSrc" :alt="item.title">
+        <img :src="item.imgSrc" :alt="item.title" :style="{width:imgWidth}">
         <h1>{{item.title}}</h1>
         <p>{{item.content}}</p>
       </div>
@@ -14,7 +14,7 @@
 <script>
 export default {
   name: 'GridList',
-  props:['title','list']
+  props:['title','list','imgWidth']
 }
 </script>
 
