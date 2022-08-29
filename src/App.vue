@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <Top />
+    <Top v-show="isShow" />
     <router-view></router-view>
-    <Bottom />
-    <Copyright/>
+    <Bottom v-show="isShow" />
+    <Copyright v-show="isShow" />
   </div>
 </template>
 
@@ -11,9 +11,13 @@
 import Top from './components/Top.vue'
 import Bottom from './components/Bottom.vue'
 import Copyright from './components/Copyright.vue';
+import { mapState } from 'vuex'
 export default {
   name: 'App',
-  components: { Top, Bottom, Copyright }
+  components: { Top, Bottom, Copyright },
+  computed:{
+    ...mapState(['isShow'])
+  }
 }
 </script>
 

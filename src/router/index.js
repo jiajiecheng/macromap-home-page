@@ -6,6 +6,7 @@ import Join from '../views/Join.vue'
 import  About from '../views/About.vue'
 import DownLoad from '../views/DownLoad.vue'
 import Cooperation from  '../views/Cooperation.vue'
+import Information from  '../views/Information.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -36,11 +37,15 @@ const routes = [
   {
     path: '/shop',
     component: Cooperation
+  },
+  {
+    path: '/information',
+    component: Information,
+    meta: { requiresAuth: true }
   }
 ]
 
 const router = new VueRouter({
   routes
 })
-
 export default router
