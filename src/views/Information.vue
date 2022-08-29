@@ -1,10 +1,24 @@
 <template>
   <div class="informationContainer">
-    <ul>
-      <li><router-link to="/home">首页</router-link></li>
-      <li><router-link to="/home">合作共赢</router-link></li>
-      <li><router-link to="/home">关于我们</router-link></li>
-    </ul>
+    <div class="header">
+      <ul class="nav">
+        <li><router-link to="/home">首页</router-link></li>
+        <li><router-link to="/home">合作共赢</router-link></li>
+        <li><router-link to="/home">商店开启免费扫码点餐</router-link></li>
+        <li><router-link to="/home">0成本创业，成为合伙人!</router-link></li>
+        <li><router-link to="/home">智能餐饮系统</router-link></li>
+        <li><router-link to="/home">关于我们</router-link></li>
+      </ul>
+    </div>
+    <div class="banner">
+      <div class="block">
+        <el-carousel trigger="click" height="340px">
+          <el-carousel-item v-for="item in 4" :key="item">
+           <img src="../assets/head-bg-scaled.jpg" alt="轮播图" style="width:100%;">
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -25,6 +39,35 @@ export default {
 
 <style scoped>
 .informationContainer {
-  margin: 75px;
+  margin-top: 100px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  width: 1120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.nav li {
+  padding: 20px;
+}
+.el-carousel__item h3 {
+  color: #475669;
+  font-size: 14px;
+  opacity: 0.75;
+  line-height: 150px;
+  margin: 0;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
 }
 </style>
