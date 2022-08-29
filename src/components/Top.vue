@@ -6,9 +6,9 @@
         <li>
           <router-link to="/home" active-class="selectLink">主页</router-link>
         </li>
-        <li>
+        <!-- <li>
           <router-link to="/product" active-class="selectLink">产品介绍</router-link>
-        </li>
+        </li> -->
         <li>
           <router-link to="/shop" active-class="selectLink">招商中心</router-link>
         </li>

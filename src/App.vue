@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Top v-show="isShow" />
+    <Top/>
     <router-view></router-view>
     <Bottom v-show="isShow" />
     <Copyright v-show="isShow" />

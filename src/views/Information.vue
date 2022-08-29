@@ -12,13 +12,14 @@
     </div>
     <div class="banner">
       <div class="block">
-        <el-carousel trigger="click" height="440px">
+        <el-carousel trigger="click" height="400px">
           <el-carousel-item v-for="item in 4" :key="item">
            <img src="../assets/head-bg-scaled.jpg" alt="轮播图" style="width:100%;">
           </el-carousel-item>
         </el-carousel>
       </div>
     </div>
+    
   </div>
 </template>
 
@@ -39,21 +40,30 @@ export default {
 
 <style scoped>
 .informationContainer {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.banner{
+ padding: 0 40px;
+}
 .nav {
-  width: 1120px;
+  width: 1400px;
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-.nav li {
-  padding: 20px;
+.header .nav li {
+  padding: 20px 30px 20px 0;
+}
+.header .nav li a{
+  color: #333;
+}
+.header .nav li a:hover{
+  color: #999;
 }
 .el-carousel__item h3 {
   color: #475669;
@@ -63,11 +73,4 @@ export default {
   margin: 0;
 }
 
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-}
 </style>
