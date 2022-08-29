@@ -12,7 +12,7 @@
     </div>
     <div class="banner">
       <div class="block">
-        <el-carousel trigger="click" height="340px">
+        <el-carousel trigger="click" height="440px">
           <el-carousel-item v-for="item in 4" :key="item">
            <img src="../assets/head-bg-scaled.jpg" alt="轮播图" style="width:100%;">
           </el-carousel-item>
