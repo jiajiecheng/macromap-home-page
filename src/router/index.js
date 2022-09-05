@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Introduction from '../views/Introduction.vue'
 import Join from '../views/Join.vue'
 import  About from '../views/About.vue'
 import DownLoad from '../views/DownLoad.vue'
@@ -17,10 +16,6 @@ const routes = [
   {
     path: '/home',
     component: Home
-  },
-  {
-    path: '/product',
-    component: Introduction
   },
   {
     path: '/join',
