@@ -13,6 +13,8 @@
     <Grid title="我们的市场未来规模有多大？" :list="list" imgWidth="100px"/>
     <Qrcode/>
     <Form/>
+    <Bottom/>
+    <Copyright/>
   </div>
 </template>
 
@@ -20,6 +22,8 @@
 import Grid from '@/components/Grid.vue'
 import Qrcode from '@/components/Qrcode.vue';
 import Form from '@/components/Form.vue';
+import Bottom from '@/components/Bottom.vue';
+import Copyright from '@/components/Copyright.vue';
 export default {
   name: 'Cooperation',
   data() {
@@ -45,7 +49,7 @@ export default {
       ]
     }
   },
-  components: { Grid, Qrcode, Form }
+  components: { Grid, Qrcode, Form, Bottom, Copyright }
 }
 </script>
 

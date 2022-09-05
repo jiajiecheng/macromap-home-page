@@ -10,6 +10,8 @@
     <div class="end">
       <h1>更多内容，等你来发现！</h1>
     </div>
+    <Bottom/>
+    <Copyright/>
   </div>
 </template>
 
@@ -21,9 +23,11 @@ import Grid from '@/components/Grid.vue'
 import Slides from '@/components/Slides.vue'
 import Time from '@/components/Time.vue'
 import Customer from '@/components/Customer.vue'
+import Bottom from '@/components/Bottom.vue'
+import Copyright from '@/components/Copyright.vue'
 export default {
   name: 'Home',
-  components: { Download, Qrcode, IntroduceList, Grid, Slides, Time, Customer },
+  components: { Download, Qrcode, IntroduceList, Grid, Slides, Time, Customer, Bottom, Copyright },
   data() {
     return {
        title: '宏图电子菜单特性',

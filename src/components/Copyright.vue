@@ -13,6 +13,7 @@ export default {
 
 <style scoped>
 .copyrightContainer{
+  width: 100%;
    background-color: #404343;
    height: 85px;
   display: flex;

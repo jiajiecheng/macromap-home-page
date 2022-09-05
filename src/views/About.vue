@@ -5,14 +5,18 @@
       <div v-html="aboutWe" class="paragraph"></div>
     </div>
     <Qrcode/>
+    <Bottom/>
+    <Copyright/>
   </div>
 </template>
 
 <script>
 import Qrcode from '@/components/Qrcode.vue';
+import Bottom from '@/components/Bottom.vue';
+import Copyright from '@/components/Copyright.vue';
 export default {
     name: "About",
-    components: { Qrcode },
+    components: { Qrcode, Bottom, Copyright },
     data() {
       return {
         aboutWe:`【吃1顿】是郑州阿提树网络科技有限公司旗下退出的餐饮智能管理系统品牌。

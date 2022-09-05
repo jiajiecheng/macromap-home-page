@@ -28,13 +28,17 @@
         </div>
       </div>
     </div>
+    <Bottom/>
+    <Copyright/>
   </div>
 </template>
 
 <script>
 import Title from '@/components/Title.vue'
+import Bottom from '@/components/Bottom.vue';
+import Copyright from '@/components/Copyright.vue';
 export default {
-  components: { Title }
+  components: { Title, Bottom, Copyright }
 }
 </script>
 
