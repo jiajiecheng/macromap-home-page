@@ -31,7 +31,7 @@
             </el-checkbox-group>
           </el-form-item>
           <el-form-item style="text-align: left;">
-            <button class="freeUse">预约咨询</button>
+            <button class="freeUse" @click="submit">预约咨询</button>
           </el-form-item>
         </el-form>
       </div>
@@ -42,6 +42,7 @@
 
 <script>
 import Title from './Title.vue'
+import { apiAddress } from '../request/api.js'
 export default {
   name: 'Form',
   components: { Title },
@@ -64,10 +65,11 @@ export default {
           { title: '您的权利', content: '我们将依法响应您作为个人信息主体的权利请求，包括知情权、更正权、删除权和撤回同意权等' }
         ]
       },
-      modified:require('../assets/serviceCenter.png')
+      modified: require('../assets/serviceCenter.png')
     }
   },
   methods: {
+    // 个人信息收集使用规则弹窗
     open() {
       const h = this.$createElement
       this.$msgbox({
@@ -89,6 +91,21 @@ export default {
         })
         this.form.type = true
       })
+    },
+    submit() {
+      apiAddress({
+        name: this.form.name,
+        phone: this.form.phone,
+        address: this.form.address + this.form.company,
+        comment: this.form.note
+      }).then(
+        res => {
+          console.log(res.data)
+        },
+        error => {
+          console.log(error);
+        }
+      )
     }
   }
 }
@@ -119,7 +136,7 @@ export default {
   justify-content: start;
   align-items: flex-start;
 }
-.freeUse{
+.freeUse {
   background-color: #409eff;
   width: 40%;
   height: 50px;

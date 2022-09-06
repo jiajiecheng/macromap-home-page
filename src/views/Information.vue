@@ -42,7 +42,11 @@
           </p>
         </div>
       </div>
-      <div class="advertising">2</div>
+      <div class="advertising">
+        <div class="hot">
+          <h1 class="title">热门文章</h1>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -114,6 +118,7 @@ export default {
 }
 .banner {
   padding: 0 40px;
+  margin-bottom: 10px;
 }
 .nav {
   width: 1400px;
@@ -151,7 +156,7 @@ export default {
 .article {
   border-radius: 2px;
   background: #f0f0f0;
-  margin: 10px 10px 10px 0;
+  margin: 0 10px 10px 0;
   flex: 1 1 340px;
   /* width: 340px; */
   display: flex;
@@ -184,6 +189,11 @@ export default {
 /*  */
 .advertising {
   width: 480px;
+  display: flex;
+  flex-direction: row;
   background-color: blue;
+}
+.hot .title{
+  font-size: 18px;
 }
 </style>
