@@ -1,5 +1,6 @@
 <template>
   <div class="informationContainer">
+    <!-- 头部分类 -->
     <div class="header">
       <ul class="nav">
         <li>
@@ -22,6 +23,7 @@
         </li>
       </ul>
     </div>
+    <!-- 轮播图 -->
     <div class="banner">
       <div class="block">
         <el-carousel trigger="click" height="400px">
@@ -32,6 +34,7 @@
       </div>
     </div>
     <div class="content">
+      <!-- 左边文章列表 -->
       <div class="articleLists">
         <div class="article" v-for="item in articleLists" :key="item.id">
           <img :src="item.imgSrc" alt="">
@@ -42,12 +45,19 @@
           </p>
         </div>
       </div>
+      <!-- 右边热门文章以及搜索文章 -->
       <div class="advertising">
+        <!-- 热门文章 -->
         <div class="hot">
           <h1 class="title">热门文章</h1>
           <div v-for="article in topArticle " :key="article.id">
-            <TopArticle :imgUrl="article.imgSrc" :label="article.lable" :title="article.title"/>
+            <TopArticle :imgUrl="article.imgSrc" :label="article.lable" :title="article.title" />
           </div>
+        </div>
+        <!-- 搜索部分 -->
+        <div class="search">
+          <h1 class="title">搜索文章</h1>
+          <SearchArticle/>
         </div>
       </div>
     </div>
@@ -56,6 +66,7 @@
 
 <script>
 import TopArticle from '@/components/TopArticle.vue'
+import SearchArticle from '@/components/SearchArticle.vue';
 export default {
   name: 'Information',
   data() {
@@ -112,7 +123,7 @@ export default {
       ]
     }
   },
-  components: { TopArticle }
+  components: { TopArticle, SearchArticle }
 }
 </script>
 
@@ -195,7 +206,10 @@ export default {
   line-height: 22px;
 }
 
-/*  */
+.search{
+  margin-top: 40px;
+}
+
 .advertising {
   width: 380px;
   padding-left: 20px;
@@ -203,13 +217,15 @@ export default {
   flex-direction: column;
   /* background-color: blue; */
 }
-.hot {
+.hot,
+.search {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
 }
-.hot .title {
+.hot .title,
+.search .title {
   font-size: 20px;
   margin-top: 0;
   margin-bottom: 8px;
