@@ -6,30 +6,29 @@
 
 <script>
 export default {
-  name:'Copyright'
-
+  name: 'Copyright'
 }
 </script>
 
 <style scoped>
-.copyrightContainer{
+.copyrightContainer {
   width: 100%;
-   background-color: #404343;
-   height: 85px;
+  background-color: #404343;
+  height: 85px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-content: center;
 }
-.copyrightInfo{
+.copyrightInfo {
   border-top: 1px solid #484a4a;
-  height: 100%;
+  height: 84px;
   color: #9d9d9d;
   width: 70%;
   text-align: center;
-  line-height: 85px;
+  line-height: 84px;
 }
-.copyrightInfo a{
+.copyrightInfo a {
   font-weight: 400;
   text-decoration: underline;
   color: #9d9d9d;
