@@ -5,8 +5,6 @@
       <div v-html="aboutWe" class="paragraph"></div>
     </div>
     <Qrcode/>
-    <Bottom/>
-    <Copyright/>
   </div>
 </template>
 

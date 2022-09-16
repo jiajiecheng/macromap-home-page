@@ -28,8 +28,6 @@
         </div>
       </div>
     </div>
-    <Bottom/>
-    <Copyright/>
   </div>
 </template>
 

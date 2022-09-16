@@ -2,7 +2,7 @@
 import Vue from 'vue'
 import {
   Carousel, CarouselItem, Button, Popover, Form, FormItem, Input, Col, Select, Option, CheckboxGroup, Checkbox, MessageBox,
-  Message,
+  Message,Pagination
 } from 'element-ui';
 Vue.component(Carousel.name, Carousel);
 Vue.component(CarouselItem.name, CarouselItem);
@@ -16,7 +16,7 @@ Vue.component(Select.name, Select);
 Vue.component(Option.name, Option);
 Vue.component(CheckboxGroup.name, CheckboxGroup);
 Vue.component(Checkbox.name, Checkbox);
-
+Vue.component(Pagination.name, Pagination);
 
 Vue.prototype.$msgbox = MessageBox;
 Vue.prototype.$message = Message;

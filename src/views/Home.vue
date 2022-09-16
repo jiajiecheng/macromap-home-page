@@ -10,8 +10,6 @@
     <div class="end">
       <h1>更多内容，等你来发现！</h1>
     </div>
-    <Bottom/>
-    <Copyright/>
   </div>
 </template>
 

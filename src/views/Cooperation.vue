@@ -13,8 +13,6 @@
     <Grid title="我们的市场未来规模有多大？" :list="list" imgWidth="100px"/>
     <Qrcode/>
     <Form/>
-    <Bottom/>
-    <Copyright/>
   </div>
 </template>
 

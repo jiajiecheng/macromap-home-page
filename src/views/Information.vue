@@ -44,6 +44,10 @@
             {{item.abstract}}
           </p>
         </div>
+        <div class="pages">
+          <el-pagination background layout="prev, pager, next" :total="1000">
+          </el-pagination>
+        </div>
       </div>
       <!-- 右边热门文章以及搜索文章 -->
       <div class="advertising">
@@ -57,7 +61,9 @@
         <!-- 搜索部分 -->
         <div class="search">
           <h1 class="title">搜索文章</h1>
-          <SearchArticle/>
+          <SearchArticle />
+          <h3 class="listTitle">热门搜索</h3>
+          <PopularCultureList />
         </div>
       </div>
     </div>
@@ -66,7 +72,9 @@
 
 <script>
 import TopArticle from '@/components/TopArticle.vue'
-import SearchArticle from '@/components/SearchArticle.vue';
+import SearchArticle from '@/components/SearchArticle.vue'
+import PopularCultureList from '@/components/PopularCultureList.vue'
+import Bottom from '@/components/Bottom.vue'
 export default {
   name: 'Information',
   data() {
@@ -123,7 +131,7 @@ export default {
       ]
     }
   },
-  components: { TopArticle, SearchArticle }
+  components: { TopArticle, SearchArticle, PopularCultureList, Bottom }
 }
 </script>
 
@@ -206,7 +214,7 @@ export default {
   line-height: 22px;
 }
 
-.search{
+.search {
   margin-top: 40px;
 }
 
@@ -230,5 +238,17 @@ export default {
   margin-top: 0;
   margin-bottom: 8px;
   /* margin: 0; */
+}
+.listTitle {
+  font-size: 17px;
+  font-weight: 600;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0;
+  margin: 20px 0 10px 0;
+}
+.pages{
+  margin: 40px auto;
+  width: 100%;
+  text-align: center;
 }
 </style>

@@ -31,8 +31,6 @@
     <div class="bottom">
       <p class="contact">对以上工作职位有兴趣的同学，可以将简历发送至：<a href="">Bin@pbk6.cn</a>，如果有作品记得附带上作品或项目域名/截图哦~我在这里等你来哟</p>
     </div>
-    <Bottom/>
-    <Copyright/>
   </div>
 </template>
 

@@ -2,8 +2,8 @@
   <div id="app">
     <Top/>
     <router-view></router-view>
-    <Bottom v-show="isShow" />
-    <Copyright v-show="isShow" />
+    <Bottom />
+    <Copyright/>
   </div>
 </template>
 
@@ -16,7 +16,6 @@ export default {
   name: 'App',
   components: { Top, Bottom, Copyright },
   computed:{
-    ...mapState(['isShow'])
   }
 }
 </script>
