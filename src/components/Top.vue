@@ -71,7 +71,7 @@ export default {
 }
 .navigation li a:hover,
 .selectLink {
-  color: #409eff;
+  color: #ff9b4a;
   cursor: default;
 }
 .freeUse{
@@ -80,12 +80,12 @@ export default {
   height: 32px;
   font-weight: 900;
   line-height: 26px;
-  border: 2px solid #409eff;
+  border: 2px solid #ff9b4a;
   border-radius: 100px;
-  color: #409eff;
+  color: #ff9b4a;
 }
 .freeUse:hover{
-  background-color: #409eff;
+  background-color: #ff9b4a;
   color: #fff;
 }
 </style>

@@ -83,7 +83,7 @@ ul.timeline-wrapper {
     .out-circle {
       width: 16px;
       height: 16px;
-      background: rgba(14, 116, 218, 0.3);
+      background: #ff9b4a;
       box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.4);
       /*opacity: 0.1;*/
       border-radius: 50%;
@@ -94,7 +94,7 @@ ul.timeline-wrapper {
         width: 8px;
         height: 8px;
         margin: 0 auto;
-        background: rgba(14, 116, 218, 1);
+        background: #ff9b4a;
         border-radius: 50%;
         box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.1);
       }
@@ -112,8 +112,8 @@ ul.timeline-wrapper {
     .long-line {
       // width: 300px;
       height: 2px;
-      background: rgba(14, 116, 218, 0.2);
-      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.3);
+      background: #ff9b4a;
+      box-shadow: 0px 4px 12px 0px #ff9b4a;
       display: flex;
       flex-direction: revert;
       justify-content: space-around;
@@ -128,14 +128,14 @@ ul.timeline-wrapper {
           align-items: center;
           .children-line-box {
             width: 0px;
-            border-left: 1px solid rgba(14, 116, 218, 0.3);
+            border-left: 1px solid #ff9b4a;
           }
           .children-box {
             flex-wrap: wrap;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid rgba(14, 116, 218, 0.3);
+            border: 1px solid #ff9b4a;
             white-space: break-spaces;
             text-align: center;
             padding: 5px;

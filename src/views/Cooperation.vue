@@ -110,17 +110,17 @@ export default {
 }
 
 .left .content button {
-  background-color: #409eff;
+  background-color: #ff9b4a;
   width: 166px;
   height: 44px;
   font-weight: 900;
   line-height: 26px;
-  border: 2px solid #409eff;
+  border: 2px solid #ff9b4a;
   border-radius: 100px;
   color: #fff;
 }
 
 .left .content button:hover {
   background-color: #fff;
-  color: #409eff;
+  color: #ff9b4a;
 }</style>

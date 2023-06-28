@@ -137,13 +137,13 @@ export default {
   align-items: flex-start;
 }
 .freeUse {
-  background-color: #409eff;
+  background-color: #ff9b4a;
   width: 40%;
   height: 50px;
   font-size: 15px;
   font-weight: 900;
   line-height: 26px;
-  border: 2px solid #409eff;
+  border: 2px solid #ff9b4a;
   border-radius: 100px;
   color: #fff;
 }
