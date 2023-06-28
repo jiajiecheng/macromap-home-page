@@ -59,12 +59,12 @@
           </div>
         </div>
         <!-- 搜索部分 -->
-        <div class="search">
+        <!-- <div class="search">
           <h1 class="title">搜索文章</h1>
           <SearchArticle />
           <h3 class="listTitle">热门搜索</h3>
           <PopularCultureList />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -145,7 +145,7 @@ export default {
   align-items: center;
 }
 .banner {
-  padding: 0 40px;
+  padding: 0 20px;
   margin-bottom: 10px;
 }
 .nav {

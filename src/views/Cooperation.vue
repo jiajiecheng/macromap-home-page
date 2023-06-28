@@ -5,14 +5,14 @@
         <div class="content">
           <h1 v-html="title"></h1>
           <p v-html="content"></p>
-          <button>立即联系我们</button>
+          <button @click="clickQuotation">立即联系我们</button>
         </div>
       </div>
       <img src="http://www.chi1dun.com/static/images/cooperation.png" class="right">
     </div>
-    <Grid title="我们的市场未来规模有多大？" :list="list" imgWidth="100px"/>
-    <Qrcode/>
-    <Form/>
+    <Grid title="我们的市场未来规模有多大？" :list="list" imgWidth="100px" />
+    <Qrcode />
+    <Form />
   </div>
 </template>
 
@@ -47,6 +47,18 @@ export default {
       ]
     }
   },
+  methods: {
+    // 点击按钮下滑
+    clickQuotation() {
+      if (this.heightFlag) return
+      this.heightFlag = true
+      this.interval = setInterval(() => {
+        window.scrollTo(0, 1400)// 第二个数表示滚动距离
+        clearInterval(this.interval)
+        this.heightFlag = false
+      }, 16.7)
+    }
+  },
   components: { Grid, Qrcode, Form, Bottom, Copyright }
 }
 </script>
@@ -58,22 +70,26 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+
 .header {
   margin: 80px 0;
   width: 940px;
   display: flex;
   flex-direction: row;
 }
+
 .header .right,
 .header .left {
   width: 50%;
 }
+
 .header .left {
   padding: 25px;
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
+
 .left .content {
   width: 100%;
   display: flex;
@@ -81,15 +97,18 @@ export default {
   justify-content: start;
   /* background-color: skyblue; */
 }
+
 .left .content h1 {
   font-size: 25px;
   margin-bottom: 10px;
 }
+
 .left .content p {
   margin: 0 0 35px 0;
   font-size: 18px;
   color: #303133;
 }
+
 .left .content button {
   background-color: #409eff;
   width: 166px;
@@ -100,8 +119,8 @@ export default {
   border-radius: 100px;
   color: #fff;
 }
+
 .left .content button:hover {
   background-color: #fff;
   color: #409eff;
-}
-</style>
+}</style>
