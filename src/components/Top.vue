@@ -1,7 +1,7 @@
 <template>
   <div class="topContainer">
     <div class="title">
-      <img src="../assets/logo.png" alt="logo" class="logo">
+      <img src="../assets/logo_new.png" alt="logo" class="logo">
       <ul class="navigation">
         <li>
           <router-link to="/home" active-class="selectLink">主页</router-link>
@@ -59,7 +59,8 @@ export default {
   align-items: center;
 }
 .logo {
-  width: 120px;
+  width: 70px;
+
 }
 .navigation {
   display: flex;
